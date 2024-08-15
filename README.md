@@ -26,8 +26,6 @@ Este site é um portfólio pessoal que apresenta:
 - `styles/style.css`: Folha de estilo que define o design para as páginas.
 - `assets/`: Imagens e ícones usados no site.
 
-## Como Rodar o Projeto
+## Como acessar o Projeto
+https://portifolionavinfo.netlify.app/
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
