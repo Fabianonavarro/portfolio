@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Portfólio de Projetos</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        .portfolio { padding: 20px; }
+        .portfolio__titulo { font-size: 2em; margin-bottom: 20px; }
+        .portfolio__intro { font-size: 1.2em; margin-bottom: 30px; }
+        .portfolio__secao { margin-bottom: 40px; }
+        .portfolio__subtitulo { font-size: 1.5em; color: #ff6600; margin-bottom: 10px; }
+        .portfolio__descricao { margin-bottom: 20px; }
+        .portfolio__lista { list-style-type: disc; margin-left: 20px; }
+        .portfolio__link { color: #0066cc; text-decoration: none; }
+        .portfolio__link:hover { text-decoration: underline; }
+        .portfolio__projeto { margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="sobre_min.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="servicos.html">Serviços</a>
+            <a class="cabecalho__menu__link" href="portfolio.html">Portfólio</a>
+        </nav>
+    </header>
+
+    <main class="portfolio">
+        <h1 class="portfolio__titulo">Nosso Portfólio de Projetos</h1>
+        <p class="portfolio__intro">
+            Confira alguns dos projetos que concluímos com sucesso. Estes exemplos ilustram nossa capacidade de entregar soluções de desenvolvimento e implementação de alta qualidade.
+        </p>
+
+        <section class="portfolio__secao">
+            <h2 class="portfolio__subtitulo">Projetos Destacados</h2>
+
+            <div class="portfolio__projeto">
+                <h3>Coletor de Notícias</h3>
+                <p class="portfolio__descricao">
+                    O "Coletor de Notícias" é um projeto que utiliza a tecnologia Streamlit para criar uma aplicação interativa que coleta e exibe notícias de várias fontes. Este projeto demonstra habilidades em Python e integração com APIs para oferecer uma experiência de usuário rica e informativa.
+                </p>
+                <ul class="portfolio__lista">
+                    <li><strong>Tecnologias Utilizadas:</strong> Python, Streamlit.</li>
+                    <li><strong>Link para o Projeto:</strong> <a class="portfolio__link" href="https://coletornoticas-nav.streamlit.app/" target="_blank">Veja o projeto ao vivo</a></li>
+                </ul>
+            </div>
+
+            <div class="portfolio__projeto">
+                <h3>Projeto de Análise de Dados</h3>
+                <p class="portfolio__descricao">
+                    Desenvolvemos uma solução em Python que analisa os Dados de Hospedagem em Nova York, uma aplicação interativa desenvolvida para analisar dados de aluguéis e hospedagem na cidade que nunca dorme! Este aplicativo oferece uma análise abrangente dos dados, incluindo estatísticas, gráficos e muito mais...
+                </p>
+                <ul class="portfolio__lista">
+                    <li><strong>Tecnologias Utilizadas:</strong> Python, pandas, matplotlib.</li>
+                    <li><strong>Link para o Projeto:</strong> <a class="portfolio__link" href="https://github.com/Fabianonavarro/Machine-Analisador-hospedagem-Big-Apple.git" target="_blank">Veja o código no GitHub</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="portfolio__secao">
+            <h2 class="portfolio__subtitulo">Outros Trabalhos do GitHub</h2>
+            <p class="portfolio__descricao">
+                Confira outros projetos disponíveis no meu GitHub. Estes trabalhos ilustram minha capacidade de criar soluções inovadoras e eficientes utilizando diversas tecnologias.
+            </p>
+            <ul class="portfolio__lista">
+                <li><a class="portfolio__link" href="https://github.com/Fabianonavarro/gerador_readme.git" target="_blank">Projeto gerador_readme</a> - Ajuda você a criar rapidamente um README com informações com informações básicas sobre seu projeto.</li>
+                <li><a class="portfolio__link" href="https://github.com/Fabianonavarro/Streamlitnps.git" target="_blank">Cálculo de NPS da iFood </a> - Análise do Net Promoter Score (NPS) da iFood Dev Week! Este projeto fornecer uma visualização dos dados de feedback.</li>
+                <li><a class="portfolio__link" href="https://github.com/Fabianonavarro/POWERBI_RH.git" target="_blank">Projeto POWERBI_RH </a> - Oferece uma análise detalhada dos dados de Recursos Humanos (RH).</li>
+            </ul>
+        </section>
+    </main>
+
+    <br>
+    <hr>
+    <footer>
+        <h4><small>&COPY; CopyWrite Desenvolvido por Fabiano Navarro. </small></h4>
+        <div class="footer__imagens-container">
+            <a href="https://github.com/Fabianonavarro" target="_blank"><img src="./assets/github-icon.png" alt="GitHub" class="footer__imagem"></a> 
+            <a href="https://www.linkedin.com/in/fabiano-de-navarro" target="_blank"><img src="./assets/linkedin-icon.png" alt="LinkedIn" class="footer__imagem"></a> 
+            <a href="mailto:nav.info.suporte@gmail.com"><img src="./assets/email-icon.png" alt="Email" class="footer__imagem"></a>
+            <a href="https://www.dio.me/users/nav_info_suporte" target="_blank">+info</a>
+        </div>
+    </footer>
+</body>
+</html>
