@@ -1,5 +1,4 @@
-# Portfólio de Fabiano Navarro
-
+<h1>Portfólio de Fabiano Navarro</h1>  
 Bem-vindo ao meu portfólio! Este repositório contém o código para o meu site pessoal, onde você pode conhecer mais sobre meu trabalho como desenvolvedor Full-Stack e especialista em análise de dados. O objetivo deste site é destacar minhas habilidades, experiências e projetos, oferecendo uma visão geral do meu trabalho e competências.
 
 ## Visão Geral
