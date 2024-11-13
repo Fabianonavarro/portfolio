@@ -21,7 +21,7 @@ Este site é um portfólio pessoal que apresenta:
 ## Estrutura do Projeto
 
 - `index.html`: Página inicial do portfólio.
-- `about.html`: Página com detalhes sobre mim e minhas habilidades.
+- `sobre_mim.html`: Página com detalhes sobre mim e minhas habilidades.
 - `styles/style.css`: Folha de estilo que define o design para as páginas.
 - `assets/`: Imagens e ícones usados no site.
 
