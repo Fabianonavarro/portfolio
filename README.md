@@ -18,12 +18,14 @@ Este site é um portfólio pessoal que apresenta:
 - **React**: Utilizado para a construção de componentes interativos.
 - **Python**: Aplicações e análises de dados (não diretamente visíveis no site, mas mencionado).
 
-## Estrutura do Projeto
+<h2>Estrutura do Projeto</h2>    
 
-- `index.html`: Página inicial do portfólio.
-- `sobre_mim.html`: Página com detalhes sobre mim e minhas habilidades.
-- `styles/style.css`: Folha de estilo que define o design para as páginas.
-- `assets/`: Imagens e ícones usados no site.
+- index.html: Página inicial do portfólio.
+- sobre_mim.html: Página com detalhes sobre mim e minhas habilidades.
+- portfolio.html : Página com trabalhos realizados
+- serviços.html  : Página com meus seviços
+- styles/style.css: Folha de estilo que define o design para as páginas.
+- assets/: Imagens e ícones usados no site.
 
 ## Como acessar o Projeto
 https://portifolionavinfo.netlify.app/
