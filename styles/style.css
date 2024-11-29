@@ -6,7 +6,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(black, blue, #e97b4e);
+    background-image: linear-gradient(black,blue) ;
     color: #fff;
     line-height: 1.6;
     text-align: justify;
@@ -110,7 +110,7 @@ li{
 
 /* Rodapé */
 /* Estilos para o footer */
-/* Estilos para o footer */
+
 footer {
     background-color:#ff6600; 
     text-align: center;  /* Centraliza o conteúdo do footer */
@@ -143,3 +143,16 @@ footer {
         margin: 0 5px;  /* Ajusta o espaçamento entre as imagens */
     }
 }
+
+
+a {
+    color: #ff6600; /* Cor padrão do link */
+  }
+  
+  a:hover {
+    color: blue; /* Cor quando o mouse passa sobre o link */
+  }
+  
+  a:active {
+    color: white; /* Cor quando o link é clicado */
+  }
