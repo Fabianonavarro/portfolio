@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de projetos desenvolvidos por Fabiano Navarro. Inclui análise de dados, desenvolvimento web, Python, Streamlit e mais. Veja projetos ao vivo e códigos no GitHub.">
+    <meta name="keywords" content="portfólio, projetos, desenvolvimento, Python, Streamlit, GitHub, análise de dados, programação, tecnologia, soluções">
+    <meta name="robots" content="index, follow">
     <title>Nosso Portfólio de Projetos</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -19,80 +22,93 @@
 
     <main>
         <h1>Nosso Portfólio de Projetos</h1>
-        <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap: 05px;" >
-            
-            <img src="./assets/desenvolvimento.png" alt="Imagem representando Desenvolvimento" style="width: 20%; right: auto;">
-            <p>Confira alguns dos projetos que concluímos com sucesso. Estes exemplos ilustram nossa capacidade de entregar soluções de desenvolvimento e implementação de alta qualidade.</p>
-        </div><hr>
-        
+        <div style="display: flex; align-items: center; gap: 10px; justify-content: space-between;">
+            <img src="./assets/desenvolvimento.png" alt="Imagem representando Desenvolvimento" style="width: 30%; height: auto;">
+            <h2>Confira alguns dos projetos que concluímos com sucesso.</h2> 
+            <br>
+            <h3>Estes exemplos ilustram nossa capacidade de entregar soluções de desenvolvimento e implementação de alta qualidade.</h3>
+        </div>
+        <hr>    
+
         <section>
             <h2>Projetos Destacados</h2>
-            <ul class="projetos-lista">
-                <li>
-                    <h3>Coletor de Notícias</h3>
-                    <p>O "Coletor de Notícias" é um projeto que utiliza a tecnologia Streamlit para criar uma aplicação interativa que coleta e exibe notícias de várias fontes. Este projeto demonstra habilidades em Python e integração com APIs para oferecer uma experiência de usuário rica e informativa.</p>
-                    <ul>
-                        <li><strong>Tecnologias Utilizadas:</strong> Python, Streamlit.</li>
-                        <li><strong>Link para o Projeto:</strong> <a href="https://coletornoticias-nav.streamlit.app/" target="_blank">Veja o projeto ao vivo</a></li>
+
+            <!-- Card 1: Coletor de Notícias -->
+            <div class="card">
+                <h3>Coletor de Notícias</h3>
+                <div style="display: flex; align-items: center; gap: 30px;">
+                    <div style="flex: 1;">
+                        <p>O "Coletor de Notícias" é um projeto que utiliza a tecnologia Streamlit para criar uma aplicação interativa que coleta e exibe notícias de várias fontes. Este projeto demonstra habilidades em Python e integração com APIs para oferecer uma experiência de usuário rica e informativa.</p>
+                        <ul>
+                            <li><strong>Tecnologias Utilizadas:</strong> Python, Streamlit.</li>
+                            <li><strong>Link para o Projeto:</strong> <a href="https://coletornoticias-nav.streamlit.app/" target="_blank">Veja o projeto ao vivo</a></li>
                         </ul>
-                            <img src="./assets/coletornoticia.PNG" alt="Imagem representando HoteisNy" style="width: 40%; height: auto;">
+                    </div>
+                    <div style="flex: 0 0 auto; padding: 10px;">
+                        <img src="./assets/coletornoticia.PNG" alt="Interface do projeto Coletor de Notícias" style="width: 100%; max-width: 300px; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Projeto de Análise de Dados -->
+            <div class="card">
+                <h3>Projeto de Análise de Dados</h3>
+                <div style="display: flex; align-items: center; gap: 30px;">
+                    <div style="flex: 1;">
+                        <p>Desenvolvemos uma solução em Python que analisa os Dados de Hospedagem em Nova York, uma aplicação interativa desenvolvida para analisar dados de aluguéis e hospedagem na cidade que nunca dorme! Este aplicativo oferece uma análise abrangente dos dados, incluindo estatísticas, gráficos e muito mais...</p>
+                        <ul>
+                            <li><strong>Tecnologias Utilizadas:</strong> Python, pandas, matplotlib.</li>
+                            <li><strong>Link para o Projeto:</strong> <a href="https://github.com/Fabianonavarro/Machine-Analisador-hospedagem-Big-Apple.git/" target="_blank">Veja o código no GitHub</a></li>
                         </ul>
-                    </ul>    
-                </li>
+                    </div>
+                    <div style="flex: 0 0 auto;">
+                        <img src="./assets/hotelny.PNG" alt="Gráfico do projeto de Análise de Dados de Hospedagem" style="width: 100%; max-width: 300px; height: auto;">
+                    </div>
+                </div>
+            </div>
 
-                <li>
-                    <h3>Projeto de Análise de Dados</h3>
-                    <p>Desenvolvemos uma solução em Python que analisa os Dados de Hospedagem em Nova York, uma aplicação interativa desenvolvida para analisar dados de aluguéis e hospedagem na cidade que nunca dorme! Este aplicativo oferece uma análise abrangente dos dados, incluindo estatísticas, gráficos e muito mais...</p>
-                    <ul>
-                        <li><strong>Tecnologias Utilizadas:</strong> Python, pandas, matplotlib.</li>
-                        <li><strong>Link para o Projeto:</strong> <a href="https://github.com/Fabianonavarro/Machine-Analisador-hospedagem-Big-Apple.git/" target="_blank">Veja o código no GitHub</a></li>
-                    </ul>
-                    <img src="./assets/hotelny.PNG" alt="Imagem representando HoteisNy" style="width: 40%; height: auto;">
-                </li>
-
-                <li>
-                    <h3>Prompt-Engineer</h3>
-                    <h4>Utilizando as boas práticas de prompt engineer</h4>
-                    <p>Este projeto é um desafio de Prompt Engineer, onde o objetivo é criar um prompt que ajuda a montar o treino ideal, considerando fatores como biotipo corporal, disponibilidade de tempo e tipo de exercícios preferidos.</p>
-                    <ul>
-                        <li><strong>Tecnologias Utilizadas:</strong> Python, aws-stepfunctions-exemplos.</li>
-                        <li><strong>Link para o Projeto:</strong> <a href="https://github.com/Fabianonavarro/Prompt-Engineer.git/" target="_blank">Veja o código no GitHub</a></li>
-                    </ul>
-                    <img src="./assets/prompt.PNG" alt="Imagem representando HoteisNy" style="width: 40%; height: auto;">
-                </li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section>
-            <h2 >Outros Trabalhos do GitHub</h2>
-            <p> Confira entre esses e outros projetos disponíveis no meu GitHub. </p>
-            <p> Estes trabalhos ilustram minha capacidade de criar soluções inovadoras e eficientes utilizando diversas tecnologias.</p>
-            
-            <div style="padding-left: 20px;">
-                <li> <a class="" href="https://github.com/Fabianonavarro/gerador_readme.git" target="_blank"> Projeto gerador_readme</a>   -Ajuda você a criar rapidamente um README com informações com informações básicas sobre seu projeto.</li>
-                <li> <a class="" href="https://github.com/Fabianonavarro/Streamlitnps.git" target="_blank"> Cálculo de NPS da iFood </a>   -Análise do Net Promoter Score (NPS) da iFood Dev Week! Este projeto fornecer uma visualização dos dados de feedback.</li>
-                <li> <a class="" href="https://github.com/Fabianonavarro/POWERBI_RH.git" target="_blank"> Projeto POWERBI_RH </a>   -Oferece uma análise detalhada dos dados de Recursos Humanos (RH).</li>
+            <!-- Card 3: Prompt-Engineer -->
+            <div class="card">
+                <h3>Prompt-Engineer</h3>
+                <h4>Utilizando as boas práticas de prompt engineering</h4>
+                <div style="display: flex; align-items: center; gap: 30px;">
+                    <div style="flex: 1;">
+                        <p>Este projeto é um desafio de Prompt Engineer, onde o objetivo é criar um prompt que ajuda a montar o treino ideal, considerando fatores como biotipo corporal, disponibilidade de tempo e tipo de exercícios preferidos.</p>
+                        <ul>
+                            <li><strong>Tecnologias Utilizadas:</strong> Python, aws-stepfunctions-exemplos.</li>
+                            <li><strong>Link para o Projeto:</strong> <a href="https://github.com/Fabianonavarro/Prompt-Engineer.git/" target="_blank">Veja o código no GitHub</a></li>
+                        </ul>
+                    </div>
+                    <div style="flex: 0 0 auto;">
+                        <img src="./assets/prompt.PNG" alt="Tela do projeto Prompt-Engineer, mostrando interface de criação de prompts de treino" style="width: 100%; max-width: 300px; height: auto;">
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
-<hr>
-    <h2 >Curriculo </h2>
-    <p> Atuei por mais de uma década em grandes empresas, adquirindo vasto aprendizado.  </p>
-    <p> Sou focado em customer service; Analista de Suporte especializado em segurança, cadastros, backup, banco de dados, tabelas, índices e relatórios..</p>
-    
-    <div style="padding-left: 20px;">
-        <!-- Link para o currículo em PDF -->
-        <p><a href="./assets/CURRICULOFABIANO.pdf" target="_blank">Baixar Currículo em PDF</a></p>
-    </div>
-</section>
-</main>
 
-    <br>
+        <section>
+            <h2>Outros Trabalhos do GitHub</h2>
+            <p>Confira entre esses e outros projetos disponíveis no meu GitHub. Estes trabalhos ilustram minha capacidade de criar soluções inovadoras e eficientes utilizando diversas tecnologias.</p>
+            <div style="padding-left: 20px;">
+                <ul>
+                    <li><a href="https://github.com/Fabianonavarro/gerador_readme.git" target="_blank">Projeto gerador_readme</a> - Ajuda você a criar rapidamente um README com informações básicas sobre seu projeto.</li>
+                    <li><a href="https://github.com/Fabianonavarro/Streamlitnps.git" target="_blank">Cálculo de NPS da iFood</a> - Análise do Net Promoter Score (NPS) da iFood Dev Week!</li>
+                    <li><a href="https://github.com/Fabianonavarro/POWERBI_RH.git" target="_blank">Projeto POWERBI_RH</a> - Oferece uma análise detalhada dos dados de Recursos Humanos (RH).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Currículo</h2>
+            <p>Atuei por mais de uma década em grandes empresas, adquirindo vasto aprendizado. Sou focado em customer service e especialista em análise de suporte, segurança, backup, banco de dados e relatórios.</p>
+            <p><a href="./assets/CURRICULOFABIANO.pdf" target="_blank">Baixar Currículo em PDF</a></p>
+        </section>
+    </main>
+
     <hr>
+
     <footer>
-        <h4><small>&COPY; CopyWrite Desenvolvido por Fabiano Navarro. </small></h4>
+        <h4><small>&COPY; CopyWrite Desenvolvido por Fabiano Navarro.</small></h4>
         <div class="footer__imagens-container">
             <a href="https://github.com/Fabianonavarro" target="_blank"><img src="./assets/github-icon.png" alt="GitHub" class="footer__imagem"></a> 
             <a href="https://www.linkedin.com/in/fabiano-de-navarro" target="_blank"><img src="./assets/linkedin-icon.png" alt="LinkedIn" class="footer__imagem"></a> 
