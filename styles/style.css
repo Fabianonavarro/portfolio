@@ -4,9 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(black,blue) ;
+    background-image: linear-gradient(black, blue);
     color: #fff;
     line-height: 1.6;
     text-align: justify;
@@ -14,10 +15,11 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color:#e97b4e;
+    background-color: #e97b4e;
     padding: 15px;
     text-align: center;
 }
+
 header a {
     color: #fff;
     text-decoration: none;
@@ -26,7 +28,6 @@ header a {
 }
 
 /* Títulos */
-
 h1 {
     color: #007bff;
     text-align: center;
@@ -40,31 +41,20 @@ h1 {
     }
 }
 
-h2{
-    color: #e97b4e;
+h2 {
+    color: #007bff;
     text-align: center;
 }
 
-p{
+p, h3, h4 {
     color: white;
-    text-align: justify;
     margin-bottom: 10px;
     margin: 0 15px;
-
-}
-
-h3{
-    color: white;
     text-align: justify;
-    margin-bottom: 10px;
-    margin: 0 10px;
 }
 
-h4{
-    color: white;
-    text-align: center;
-    margin-bottom: 10px;
-    margin: 0 10px;
+h3, h4 {
+    text-align: left;
 }
 
 /* Parágrafos e Listas */
@@ -72,87 +62,145 @@ p, ul {
     font-size: 1.1em;
     margin-bottom: 20px;
 }
+
 ul {
     list-style-type: none;
     margin-bottom: 10px;
 }
+
 ul li {
     margin-bottom: 10px;
     color: white;
     text-align: justify;
     font-weight: bold;
-    margin-bottom: 20px;
     margin: 0 15px;
 }
 
-li{
-    l li {
-        margin-bottom: 10px;
-        color: white;
-        text-align: justify;
-        font-weight: bold;
-        margin-bottom: 20px;
-        margin: 0 15px;
-    }
+/* Estilos do carrossel */
+.carousel-item img {
+    max-height: 400px; /* Limita a altura das imagens para o carrossel */
+    object-fit: cover; /* Mantém a proporção das imagens sem distorcer */
 }
 
-/* Imagens */
-
-.apresentacao__imagem {
-    max-width: 80%;
-    height: auto;
-    display: block;
-    margin: 0, 15px;
-    
+/* Estilos do conteúdo principal */
+.servicos__titulo {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-
+.servicos__titulo h4 {
+    color: #007bff;
+    font-size: 1.5em;
+}
 
 /* Rodapé */
-/* Estilos para o footer */
-
 footer {
-    background-color:#ff6600; 
-    text-align: center;  /* Centraliza o conteúdo do footer */
+    background-color: #ff6600; 
+    text-align: center;
     color: #fff;
-    padding: 15px;  /* Espaçamento interno */
+    padding: 15px;
     max-width: 100%;
 }
 
 /* Estilos para as imagens dentro do footer */
 .footer__imagem {
-    max-width: 3%;  /* Define a largura máxima das imagens */
-    height: auto;   /* Mantém a altura proporcional */
-    margin: 0 px; /* Adiciona um espaçamento horizontal entre as imagens */
-    transition: transform 0.3s ease; /* Efeito de transição suave */
+    max-width: 5%;  /* Aumenta um pouco a largura das imagens */
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
 }
 
 /* Efeito de hover nas imagens */
 .footer__imagem:hover {
-    transform: scale(1.1);  /* Aumenta a imagem um pouco ao passar o mouse */
+    transform: scale(1.1);
 }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     footer {
-        padding: 15px 0;  /* Ajusta o padding para telas menores */
+        padding: 15px 0;
     }
 
     .footer__imagem {
-        max-width: 15%; /* Aumenta a largura das imagens em telas menores */
-        margin: 0 5px;  /* Ajusta o espaçamento entre as imagens */
+        max-width: 10%;
+        margin: 0 5px;
+    }
+
+    /* Ajustando o carrossel para telas menores */
+    .carousel-inner img {
+        max-height: 300px;
+    }
+
+    .servicos__titulo {
+        font-size: 1.5em;
+    }
+
+    p, h3, h4 {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    /* Ajustes para a imagem do carrossel */
+    .carousel-item img {
+        max-height: 250px; /* Ajuste para telas pequenas */
     }
 }
 
-
+/* Links */
 a {
     color: #ff6600; /* Cor padrão do link */
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: blue; /* Cor quando o mouse passa sobre o link */
-  }
-  
-  a:active {
+}
+
+a:active {
     color: white; /* Cor quando o link é clicado */
-  }
+}
+
+/* Estilos para o Card */
+.card {
+    background-color: #e97b4e;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ddd;
+    font-size: 1.1em;
+}
+
+/* Card dentro de um container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-container .card {
+    width: 30%; /* Ajusta o tamanho do card */
+    min-width: 250px; /* Tamanho mínimo do card */
+}
+
+/* Responsividade para o Card */
+@media (max-width: 768px) {
+    .card-container .card {
+        width: 100%; /* Faz com que os cards ocupem a tela inteira em telas pequenas */
+        margin-bottom: 20px;
+    }
+}
