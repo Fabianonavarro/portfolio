@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosso Portfólio de Projetos</title>
     <link rel="stylesheet" href="./styles/style.css">
-   
 </head>
 <body>
     <header class="cabecalho">
@@ -18,55 +17,55 @@
         </nav>
     </header>
 
-    <main class="">
+    <main>
         <h1>Nosso Portfólio de Projetos</h1>
-        <br>
-        <p > Confira alguns dos projetos que concluímos com sucesso.     </p>
-        <p> Estes exemplos ilustram nossa capacidade de entregar soluções de desenvolvimento e implementação de alta qualidade.</p>
-        <hr>
-        <section >
+        <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap: 05px;" >
+            
+            <img src="./assets/desenvolvimento.png" alt="Imagem representando Desenvolvimento" style="width: 20%; right: auto;">
+            <p>Confira alguns dos projetos que concluímos com sucesso. Estes exemplos ilustram nossa capacidade de entregar soluções de desenvolvimento e implementação de alta qualidade.</p>
+        </div><hr>
+        
+        <section>
             <h2>Projetos Destacados</h2>
-            <div>
-                <h3>Coletor de Notícias</h3>
-                <p>
-                    O "Coletor de Notícias" é um projeto que utiliza a tecnologia Streamlit para criar uma aplicação interativa que coleta e exibe notícias de várias fontes. Este projeto demonstra habilidades em Python e integração com APIs para oferecer uma experiência de usuário rica e informativa.
-                </p>
-                <ul>
-                    <li><strong>Tecnologias Utilizadas:</strong> Python, Streamlit.</li>
-                    <li><strong>Link para o Projeto:</strong> <a class="" href="https://coletornoticas-nav.streamlit.app/" target="_blank"> Veja o projeto ao vivo</a></li>
-                </ul>
-            </div>
-           
-            <div >
-                <h3>Projeto de Análise de Dados</h3>
-                <p>
-                    Desenvolvemos uma solução em Python que analisa os Dados de Hospedagem em Nova York, uma aplicação interativa desenvolvida para analisar dados de aluguéis e hospedagem na cidade que nunca dorme! Este aplicativo oferece uma análise abrangente dos dados, incluindo estatísticas, gráficos e muito mais...
-                </p>
-                <ul >
-                    <li><strong>Tecnologias Utilizadas:</strong> Python, pandas, matplotlib.</li>
-                    <li><strong>Link para o Projeto:</strong> <a class="" href="https://github.com/Fabianonavarro/Machine-Analisador-hospedagem-Big-Apple.git/" target="_blank"> Veja o código no GitHub</a></li>
-                </ul>
-                <img src="./assets/hotelny.PNG" alt="Imagem representando HoteisNy" style="width: 40%; height: auto;">
-                
-            </div>
-            <hr>
-            
-            <div>
-                <h3>Prompt-Engineer</h3>
-                <h4>utilizando as boas práticas de prompt engineer</h4>
-                <p> Este projeto é um desafio de Prompt Engineer, onde o objetivo é criar um prompt que ajuda a montar o treino ideal.</p>
-                <p> para cada combinação de fatores, como biotipo corporal, disponibilidade de tempo e tipo de exercícios preferidos.</p>
-                <p> O assistente de personal trainer gerado por esse prompt será capaz de personalizar os treinos de acordo com as características e necessidades do usuário.</p>
-            
-                <ul>
-                    <li><strong>Tecnologias Utilizadas:</strong> Python, aws-stepfunctions-exemplos.</li>
-                    <li><strong>Link para o Projeto:</strong> <a class="" href="hhttps://github.com/Fabianonavarro/Prompt-Engineer.git/" target="_blank"> Veja o código no GitHub</a></li>
-                </ul>
-            </div>
-        </section>
-            <hr>
+            <ul class="projetos-lista">
+                <li>
+                    <h3>Coletor de Notícias</h3>
+                    <p>O "Coletor de Notícias" é um projeto que utiliza a tecnologia Streamlit para criar uma aplicação interativa que coleta e exibe notícias de várias fontes. Este projeto demonstra habilidades em Python e integração com APIs para oferecer uma experiência de usuário rica e informativa.</p>
+                    <ul>
+                        <li><strong>Tecnologias Utilizadas:</strong> Python, Streamlit.</li>
+                        <li><strong>Link para o Projeto:</strong> <a href="https://coletornoticias-nav.streamlit.app/" target="_blank">Veja o projeto ao vivo</a></li>
+                        </ul>
+                            <img src="./assets/coletornoticia.PNG" alt="Imagem representando HoteisNy" style="width: 40%; height: auto;">
+                        </ul>
+                    </ul>    
+                </li>
 
-        <section >
+                <li>
+                    <h3>Projeto de Análise de Dados</h3>
+                    <p>Desenvolvemos uma solução em Python que analisa os Dados de Hospedagem em Nova York, uma aplicação interativa desenvolvida para analisar dados de aluguéis e hospedagem na cidade que nunca dorme! Este aplicativo oferece uma análise abrangente dos dados, incluindo estatísticas, gráficos e muito mais...</p>
+                    <ul>
+                        <li><strong>Tecnologias Utilizadas:</strong> Python, pandas, matplotlib.</li>
+                        <li><strong>Link para o Projeto:</strong> <a href="https://github.com/Fabianonavarro/Machine-Analisador-hospedagem-Big-Apple.git/" target="_blank">Veja o código no GitHub</a></li>
+                    </ul>
+                    <img src="./assets/hotelny.PNG" alt="Imagem representando HoteisNy" style="width: 40%; height: auto;">
+                </li>
+
+                <li>
+                    <h3>Prompt-Engineer</h3>
+                    <h4>Utilizando as boas práticas de prompt engineer</h4>
+                    <p>Este projeto é um desafio de Prompt Engineer, onde o objetivo é criar um prompt que ajuda a montar o treino ideal, considerando fatores como biotipo corporal, disponibilidade de tempo e tipo de exercícios preferidos.</p>
+                    <ul>
+                        <li><strong>Tecnologias Utilizadas:</strong> Python, aws-stepfunctions-exemplos.</li>
+                        <li><strong>Link para o Projeto:</strong> <a href="https://github.com/Fabianonavarro/Prompt-Engineer.git/" target="_blank">Veja o código no GitHub</a></li>
+                    </ul>
+                    <img src="./assets/prompt.PNG" alt="Imagem representando HoteisNy" style="width: 40%; height: auto;">
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
             <h2 >Outros Trabalhos do GitHub</h2>
             <p> Confira entre esses e outros projetos disponíveis no meu GitHub. </p>
             <p> Estes trabalhos ilustram minha capacidade de criar soluções inovadoras e eficientes utilizando diversas tecnologias.</p>
