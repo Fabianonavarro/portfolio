@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,150 +7,169 @@
     <meta name="description" content="Portfólio de projetos desenvolvidos por Fabiano Navarro. Inclui análise de dados, desenvolvimento web, Python, Streamlit e mais. Veja projetos ao vivo e códigos no GitHub.">
     <meta name="keywords" content="portfólio, projetos, desenvolvimento, Python, Streamlit, GitHub, análise de dados, programação, tecnologia, soluções">
     <meta name="robots" content="index, follow">
-    <title>Nosso Portfólio de Projetos</title>
+    <title>Portfólio de Projetos | Fabiano Navarro</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Global -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="sobre_min.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="servicos.html">Serviços</a>
-            <a class="cabecalho__menu__link" href="contato.html">Contatos</a>
+
+<!-- HEADER -->
+<header class="bg-light py-3 mb-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <a href="index.html" class="text-decoration-none fs-4 fw-bold">Fabiano Navarro</a>
+        <nav class="nav">
+            <a class="nav-link px-2" href="index.html">Home</a>
+            <a class="nav-link px-2" href="sobre_min.html">Sobre mim</a>
+            <a class="nav-link px-2" href="servicos.html">Serviços</a>
+            <a class="nav-link px-2" href="contato.html">Contato</a>
         </nav>
-    </header>
-
-    <main>
-        <h1>Nosso Portfólio de Projetos</h1>
-        <div style="display: flex; align-items: center; gap: 10px; justify-content: space-between;">
-            <img src="./assets/desenvolvimento.png" alt="Imagem representando Desenvolvimento" style="width: 30%; height: auto;">
-            <h2>Confira alguns dos projetos concluido com sucesso.</h2> 
-            <br>
-            <h3>Estes exemplos ilustram a capacidade de entregar soluções de desenvolvimento e implementação de alta qualidade.</h3>
-        </div>
-        <hr>    
-
-        <section>
-            <h2>Projetos Destacados</h2>
-
-            <div class="card">
-    <h3>Coletor de Notícias</h3>
-
-    <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 250px;">
-            <p>
-                O <strong>Coletor de Notícias</strong> é um projeto desenvolvido com Streamlit
-                que cria uma aplicação interativa para coletar e exibir notícias de diversas
-                fontes. O projeto demonstra habilidades em Python e integração com APIs,
-                oferecendo uma experiência de usuário clara e informativa.
-            </p>
-
-            <ul>
-                <li><strong>Tecnologias utilizadas:</strong> Python, Streamlit</li>
-                <li>
-                    <strong>Link para o projeto:</strong>
-                    <a href="https://coletornoticas-nav.streamlit.app/"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        Veja o projeto ao vivo
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div style="flex: 0 0 auto; padding: 10px;">
-            <img src="./assets/coletornoticia.PNG"
-                 alt="Interface do projeto Coletor de Notícias"
-                 style="max-width: 300px; width: 100%; height: auto;">
-        </div>
     </div>
-</div>
+</header>
 
-            <!-- Card 2: Projeto de Análise de Dados -->
-            <div class="card">
+<main class="container">
+
+    <!-- HERO -->
+    <section class="text-center my-5">
+        <img src="./assets/desenvolvimento.png" alt="Imagem representando Desenvolvimento" class="img-fluid mb-3" style="max-width: 300px;">
+        <h1>Nosso Portfólio de Projetos</h1>
+        <h2 class="mt-3">Confira alguns dos projetos concluídos com sucesso</h2>
+        <p class="lead">Estes exemplos ilustram a capacidade de entregar soluções de desenvolvimento e implementação de alta qualidade.</p>
+    </section>
+
+    <!-- PROJETOS DESTACADOS -->
+    <section class="my-5">
+        <h2 class="mb-4 text-center">Projetos Destacados</h2>
+
+        <div class="card-container">
+
+            <!-- Card 1 -->
+            <div class="card shadow-hover mb-4">
+                <h3>Coletor de Notícias</h3>
+                <div class="d-flex flex-wrap align-items-center gap-4">
+                    <div class="flex-fill">
+                        <p>O <strong>Coletor de Notícias</strong> é um projeto em Streamlit que cria uma aplicação interativa para coletar e exibir notícias de diversas fontes, mostrando habilidades em Python e integração com APIs.</p>
+                        <ul>
+                            <li><strong>Tecnologias:</strong> Python, Streamlit</li>
+                            <li><strong>Link:</strong> <a href="https://coletornoticas-nav.streamlit.app/" target="_blank">Ver projeto ao vivo</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="./assets/coletornoticia.PNG" alt="Interface do projeto Coletor de Notícias" class="img-fluid" style="max-width: 300px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card shadow-hover mb-4">
                 <h3>Projeto de Análise de Dados</h3>
-                <div style="display: flex; align-items: center; gap: 30px;">
-                    <div style="flex: 1;">
-                        <p>Desenvolvemos uma solução em Python que analisa os Dados de Hospedagem em Nova York, uma aplicação interativa desenvolvida para analisar dados de aluguéis e hospedagem na cidade que nunca dorme! Este aplicativo oferece uma análise abrangente dos dados, incluindo estatísticas, gráficos e muito mais...</p>
+                <div class="d-flex flex-wrap align-items-center gap-4">
+                    <div class="flex-fill">
+                        <p>Aplicativo interativo que analisa dados de hospedagem em Nova York, apresentando estatísticas, gráficos e insights usando Python.</p>
                         <ul>
-                            <li><strong>Tecnologias Utilizadas:</strong> Python, pandas, matplotlib.</li>
-                            <li><strong>Link para o Projeto:</strong> <a href="https://github.com/Fabianonavarro/Machine-Analisador-hospedagem-Big-Apple.git/" target="_blank">Veja o código no GitHub</a></li>
+                            <li><strong>Tecnologias:</strong> Python, pandas, matplotlib</li>
+                            <li><strong>Link:</strong> <a href="https://github.com/Fabianonavarro/Machine-Analisador-hospedagem-Big-Apple.git/" target="_blank">Código no GitHub</a></li>
                         </ul>
                     </div>
-                    <div style="flex: 0 0 auto;">
-                        <img src="./assets/hotelny.PNG" alt="Gráfico do projeto de Análise de Dados de Hospedagem" style="width: 100%; max-width: 300px; height: auto;">
+                    <div class="flex-shrink-0">
+                        <img src="./assets/hotelny.PNG" alt="Gráfico do projeto de Análise de Dados de Hospedagem" class="img-fluid" style="max-width: 300px;">
                     </div>
                 </div>
             </div>
 
-            <!-- Card 3: Prompt-Engineer -->
-            <div class="card">
+            <!-- Card 3 -->
+            <div class="card shadow-hover mb-4">
                 <h3>Prompt-Engineer</h3>
-                <h4>Utilizando as boas práticas de prompt engineering</h4>
-                <div style="display: flex; align-items: center; gap: 30px;">
-                    <div style="flex: 1;">
-                        <p>Este projeto é um desafio de Prompt Engineer, onde o objetivo é criar um prompt que ajuda a montar o treino ideal, considerando fatores como biotipo corporal, disponibilidade de tempo e tipo de exercícios preferidos.</p>
+                <h4>Boas práticas de prompt engineering</h4>
+                <div class="d-flex flex-wrap align-items-center gap-4">
+                    <div class="flex-fill">
+                        <p>Desafio de Prompt Engineer para criar treinos ideais considerando biotipo, tempo disponível e tipo de exercícios preferidos.</p>
                         <ul>
-                            <li><strong>Tecnologias Utilizadas:</strong> Python, aws-stepfunctions-exemplos.</li>
-                            <li><strong>Link para o Projeto:</strong> <a href="https://github.com/Fabianonavarro/Prompt-Engineer.git/" target="_blank">Veja o código no GitHub</a></li>
+                            <li><strong>Tecnologias:</strong> Python, aws-stepfunctions-exemplos</li>
+                            <li><strong>Link:</strong> <a href="https://github.com/Fabianonavarro/Prompt-Engineer.git/" target="_blank">Código no GitHub</a></li>
                         </ul>
                     </div>
-                    <div style="flex: 0 0 auto;">
-                        <img src="./assets/prompt.PNG" alt="Tela do projeto Prompt-Engineer, mostrando interface de criação de prompts de treino" style="width: 100%; max-width: 300px; height: auto;">
+                    <div class="flex-shrink-0">
+                        <img src="./assets/prompt.PNG" alt="Tela do projeto Prompt-Engineer" class="img-fluid" style="max-width: 300px;">
                     </div>
                 </div>
             </div>
 
-             <!-- Card 4: Projeto IA -->
-             <div class="card">
+            <!-- Card 4 -->
+            <div class="card shadow-hover mb-4">
                 <h3>Projeto de IAs Generativas</h3>
-                <div style="display: flex; align-items: center; gap: 30px;">
-                    <div style="flex: 1;">
-                        <p>desenvolvido com  Chatgpt e studio.d-id >  a Interface de Usuário Natural (NUI) da D-ID. A interface que humaniza as interações com tudo que é digital. Crie interfaces que entendam as necessidades dos usuários e possam ser comunicadas de forma eficaz. Sem digitação, sem cliques, apenas conversa cara a cara. e muito mais...</p>
+                <div class="d-flex flex-wrap align-items-center gap-4">
+                    <div class="flex-fill">
+                        <p>Interface de Usuário Natural (NUI) usando ChatGPT e studio.d-id, criando experiências digitais humanas sem cliques ou digitação.</p>
                         <ul>
-                            <li><strong>Tecnologias Utilizadas:</strong> Chatgpt e studio.d-id = Interface de Usuário Natural (NUI) da D-ID. A.</li>
-                            <li><strong>Link para o Projeto:</strong> <a href="https://github.com/Fabianonavarro/lab-natty-or-not.git/" target="_blank">Veja o código no GitHub</a></li>
+                            <li><strong>Tecnologias:</strong> ChatGPT, studio.d-id</li>
+                            <li><strong>Link:</strong> <a href="https://github.com/Fabianonavarro/lab-natty-or-not.git/" target="_blank">Código no GitHub</a></li>
                         </ul>
                     </div>
-                    <div style="flex: 0 0 auto;">
-                        <img src="./assets/caveira.PNG" alt="Gráfico do video caveira" style="width: 100%; max-width: 300px; height: auto;">
+                    <div class="flex-shrink-0">
+                        <img src="./assets/caveira.PNG" alt="Gráfico do projeto IAs Generativas" class="img-fluid" style="max-width: 300px;">
                     </div>
                 </div>
             </div>
 
-        </section>
-
-        <section>
-            <h2>Outros Trabalhos do GitHub</h2>
-            <p>Confira entre esses e outros projetos disponíveis no meu GitHub. Estes trabalhos ilustram minha capacidade de criar soluções inovadoras e eficientes utilizando diversas tecnologias.</p>
-            <div style="padding-left: 20px;">
-                <ul>
-                    <li><a href="https://github.com/Fabianonavarro/gerador_readme.git" target="_blank">Projeto gerador_readme</a> - Ajuda você a criar rapidamente um README com informações básicas sobre seu projeto.</li>
-                    <li><a href="https://github.com/Fabianonavarro/Streamlitnps.git" target="_blank">Cálculo de NPS da iFood</a> - Análise do Net Promoter Score (NPS) da iFood Dev Week!</li>
-                    <li><a href="https://github.com/Fabianonavarro/criptografia_Python.git" target="_blank">Projeto Criptografia</a> - Para criptograr e descriptograr arquivos .</li>
-                    <li><a href="https://github.com/Fabianonavarro/POWERBI_RH.git" target="_blank">Projeto POWERBI_RH</a> - Oferece uma análise detalhada dos dados de Recursos Humanos (RH).</li>
-                    <li><a href="https://github.com/Fabianonavarro/Machine_Learning-analise_covid19.git" target="_blank">Machine_Learning-analise_covid19</a> - Oferece uma análise detalhada dos dados  de COVID-19.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Currículo</h2>
-            <p>Atuei por mais de uma década em grandes empresas, adquirindo vasto aprendizado. Sou focado em customer service e especialista em análise de suporte, segurança, backup, banco de dados e relatórios.</p>
-            <p><a href="./assets/CURRICULOFABIANO.pdf" target="_blank">Baixar Currículo em PDF</a></p>
-        </section>
-    </main>
-
-    <hr>
-
-    <footer>
-        <h4><small>&COPY; CopyWrite Desenvolvido por Fabiano Navarro.</small></h4>
-        <div class="footer__imagens-container">
-            <a href="https://github.com/Fabianonavarro" target="_blank"><img src="./assets/github-icon.png" alt="GitHub" class="footer__imagem"></a> 
-            <a href="https://www.linkedin.com/in/fabiano-de-navarro" target="_blank"><img src="./assets/linkedin-icon.png" alt="LinkedIn" class="footer__imagem"></a> 
-            <a href="mailto:nav.info.suporte@gmail.com"><img src="./assets/email-icon.png" alt="Email" class="footer__imagem"></a>
-            <a href="https://www.dio.me/users/nav_info_suporte" target="_blank">+info</a>
         </div>
-    </footer>
+    </section>
+
+    <!-- OUTROS TRABALHOS -->
+    <section class="my-5">
+        <h2 class="mb-3">Outros Trabalhos do GitHub</h2>
+        <p>Confira outros projetos no meu GitHub:</p>
+        <ul class="ms-3">
+            <li><a href="https://github.com/Fabianonavarro/gerador_readme.git" target="_blank">Projeto gerador_readme</a> - Criação rápida de README.</li>
+            <li><a href="https://github.com/Fabianonavarro/Streamlitnps.git" target="_blank">Cálculo de NPS da iFood</a></li>
+            <li><a href="https://github.com/Fabianonavarro/criptografia_Python.git" target="_blank">Projeto Criptografia</a></li>
+            <li><a href="https://github.com/Fabianonavarro/POWERBI_RH.git" target="_blank">Projeto POWERBI_RH</a></li>
+            <li><a href="https://github.com/Fabianonavarro/Machine_Learning-analise_covid19.git" target="_blank">Machine_Learning-analise_covid19</a></li>
+        </ul>
+    </section>
+
+    <!-- CURRÍCULO -->
+    <section class="my-5">
+        <h2>Currículo</h2>
+        <p>Atuei por mais de uma década em grandes empresas, focado em customer service e especialista em análise de suporte, segurança, backup, banco de dados e relatórios.</p>
+        <p><a href="./assets/CURRICULOFABIANO.pdf" target="_blank">Baixar Currículo em PDF</a></p>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="rodape">
+  <div class="rodape__menu">
+    <span class="rodape__copy">
+      © CopyWrite Desenvolvido por Fabiano Navarro.
+    </span>
+
+    <nav class="rodape__links">
+      <a href="https://github.com/Fabianonavarro" target="_blank">
+        <img src="./assets/github-icon.png" alt="GitHub">
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/fabiano-de-navarro" target="_blank">
+        <img src="./assets/linkedin-icon.png" alt="LinkedIn">
+        LinkedIn
+      </a>
+      <a href="mailto:nav.info.suporte@gmail.com">
+        <img src="./assets/email-icon.png" alt="Email">
+        Email
+      </a>
+      <a href="https://www.dio.me/users/nav_info_suporte" target="_blank">
+        +Info
+      </a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

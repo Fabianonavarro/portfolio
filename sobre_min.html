@@ -1,149 +1,215 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim</title>
-    <link rel="stylesheet" href="./styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mim | Fabiano Navarro</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
-
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="servicos.html">Serviços</a>
-            <a class="cabecalho__menu__link" href="portfolio.html">Portfólio</a>
-            <a class="cabecalho__menu__link" href="contato.html">Contatos</a>
-        </nav>
-    </header>
 
-    <main class="sobre">
-        
-        <h1>Desenvolvedor Full-Stack e Especialista em Análise de Dados</h1>
-        <h2>Sou Fabiano, um apaixonado pela tecnologia com uma longa trajetória de superação e aprendizado.</h2>
+<!-- HEADER -->
+<header class="bg-light py-3 mb-4">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center">
+    <a href="index.html" class="text-decoration-none fs-4 fw-bold">Fabiano Navarro</a>
+    <nav class="nav">
+      <a class="nav-link px-2" href="index.html">Home</a>
+      <a class="nav-link px-2" href="servicos.html">Serviços</a>
+      <a class="nav-link px-2" href="portfolio.html">Serviços</a>
+      <a class="nav-link px-2" href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
 
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 50px;">
-            <p>
-                Tenho mais de uma década de experiência no setor de TI, começando minha jornada com sistemas MS-DOS e evoluindo para a era moderna da computação. Me especializei em áreas como Desenvolvimento Web, Análise de Dados, Infraestrutura e Suporte Técnico. 
-                Ao longo da minha carreira, trabalhei em grandes empresas como TIVIT, Algar Tech e Iamit Soluções, desenvolvendo habilidades essenciais em ambientes dinâmicos e desafiadores. 
-                Minha experiência também inclui o gerenciamento de infraestruturas complexas, análise de dados com Power BI e Python, e a implementação de soluções em plataformas de nuvem como AWS e Google Cloud.
-            </p>
-            
-            <div style="padding: 15px;">
-                <img src="./assets/eucompleto.png" alt="Imagem Fabiano" class="apresentacao__imagem">
-            </div>
-        </div>
+<main class="container">
 
+  <!-- SEÇÃO INICIAL -->
+  <section class="mb-5">
+
+    <!-- TÍTULO DA PÁGINA -->
+    <h1 class="mb-3">Desenvolvedor Full-Stack e Especialista em Análise de Dados</h1>
+
+    <!-- PRIMEIRA LINHA NORMAL -->
+    <p class="mb-4">
+      Sou Fabiano, um apaixonado pela tecnologia com uma longa trajetória de superação e aprendizado.
+    </p>
+
+    <!-- ROW COM SEGUNDO E TERCEIRO PARÁGRAFO + IMAGEM -->
+    <div class="row align-items-start mb-4">
+      
+      <!-- TEXTO -->
+      <div class="col-md-7">
         <p>
-            Com uma mentalidade orientada para resultados, busco sempre superar desafios, entregar soluções eficazes e contribuir para o sucesso dos meus colegas e das empresas com as quais colaboro.
-            Acredito na importância do aprendizado contínuo e estou sempre aberto a novos desafios e oportunidades de crescimento.
+          Tenho mais de uma década de experiência no setor de TI, começando minha jornada com sistemas MS-DOS e evoluindo para a era moderna da computação. Me especializei em áreas como Desenvolvimento Web, Análise de Dados, Infraestrutura e Suporte Técnico.
         </p>
 
-        <!-- Card 1 - Formação e Certificações -->
-        <section class="card">
-            <h3>Formação:</h3>
-            <p><strong>Centro Universitário Senac:</strong> Gestão da Tecnologia da Informação (trancado, com a intenção de retomar em breve).</p>
-            <div style="padding: 15px;">
-                <img src="./assets/cursos.jpg" alt="Cursos Fabiano" style="width: 20%; height: auto;">
-            </div>
-            
+        <p>
+          Ao longo da minha carreira, trabalhei em grandes empresas como TIVIT, Algar Tech e Iamit Soluções, desenvolvendo habilidades essenciais em ambientes dinâmicos e desafiadores. Minha experiência também inclui o gerenciamento de infraestruturas complexas, análise de dados com Power BI e Python, e a implementação de soluções em plataformas de nuvem como AWS e Google Cloud.
+        </p>
+      </div>
 
-            <h2>Cursos e Certificações:</h2>
-            <div style="padding-left: 20px;">
-                <li>SENAC: Instalação e Manutenção de PCs – São Paulo, Dezembro/2014 (240 horas)</li>
-                <li>CKa Solution Tecnologia em Software: Microsoft Security Compliance (SC900) – São Paulo, 2021</li>
-                <li>SENAI: Tecnologia da Informação e Comunicação – Janeiro/2023 (14 horas)</li>
-                <li>Fundação Bradesco: Análise de Dados com Power BI – São Paulo, Julho/2023</li>
-                <li>DIO - Instituto de Ensino Brasil: Ciência de Dados com Python – 2023 (169 horas), Python Data Analytics – 2024 (68 horas), Python AI Backend Developer – Junho/2024 (67 horas), Data Analytics com Power BI – Julho/2024 (82 horas)</li>
-                <li>NTT DATA: Engenharia de Dados com Python – Setembro/2024 (91 horas)</li>
-                <li>Escola das Nuvens: Re/start 2 Fundamentos de AWS – São Paulo, 2024, AWS re/Start Graduate – Certificado emitido pela Amazon Web Services Training and Certification</li>
-                <li>Fundação Estudar: C50: Introdução à Ciência da Computação (Curso de Harvard) – Maio/2024 (70 horas)</li>
-            </div>
-        </section>
+      <!-- IMAGEM -->
+      <div class="col-md-5 text-center">
+        <img 
+          src="./assets/eucompleto.png" 
+          alt="Fabiano Navarro"
+          class="img-fluid rounded-3"
+          style="max-height: 420px; object-fit: cover;"
+        >
+      </div>
+    </div>
 
-        <!-- Card 2 - Habilidades Técnicas -->
-        <section class="card">
-            <h2>Habilidades Técnicas</h2>
-            <ul style="padding-left: 20px;">
-                <li><strong>Sistemas Operacionais:</strong> Windows, Linux, Android, macOS</li>
-                <li><strong>Linguagens de Programação:</strong> Python, Python Data Analytics, JavaScript</li>
-                <li><strong>Plataformas de Nuvem:</strong> AWS, Google Cloud, Citrix, Virtual Machines (VM)</li>
-                <li><strong>Ferramentas de Análise de Dados:</strong> Power BI, MySQL, PostgreSQL</li>
-                <li><strong>Desenvolvimento Web:</strong> HTML, React, JavaScript</li>
-                <li><strong>Ferramentas Adicionais:</strong> Office 365, Microsoft Teams, Outlook, Active Directory, ServiceNow</li>
-            </ul>
-        </section>
+    <!-- TEXTO RESTANTE CORRIDO -->
+    <div class="mb-4" style="line-height: 1.8;">
+      <p>
+        Com uma mentalidade orientada para resultados, busco sempre superar desafios, entregar soluções eficazes e contribuir para o sucesso dos meus colegas e das empresas com as quais colaboro.
+      </p>
 
-        <!-- Card 3 - Experiência Profissional -->
-        <section class="card">
-            <h2>Experiência Profissional</h2>
-            <div style="padding-left: 20px;">
-                <p>Trabalhei em empresas renomadas como TIVIT, Algar Tech, Iamit Soluções em Tecnologia e Azul Linhas Aéreas, onde fui responsável por:</p>
-                
-                <li> Suporte Técnico e Infraestrutura:  Fornecendo suporte presencial e remoto, gerenciando incidentes de TI, resolvendo problemas em sistemas e redes complexas, e implementando soluções de infraestrutura.</li>
-                <li> Administração de Sistemas e Redes: Realizando instalação, configuração e manutenção de sistemas operacionais (Windows, Linux) e redes (VPN, Citrix, Active Directory), além de aplicar boas práticas de segurança em ambientes corporativos.</li>
-                <li> Análise de Dados e Business Intelligence: Utilizando ferramentas como Power BI e Python para gerar insights estratégicos, além de realizar treinamentos e capacitação de equipes.</li>
-                <li> Projetos de Melhoria e Implementação: Participando ativamente de projetos, como a implementação do sistema SMARTKARGO para logística na Azul Linhas Aéreas, e o projeto APU Zero, focado na economia de combustível por meio de análise de dados e integração entre áreas de negócio e tecnologia.</li>
-                
-            </div>
-        </section>
+      <p>
+        Você nunca é velho demais para estabelecer outra meta ou sonhar um novo sonho. Acredite em seu potencial, e você estará a meio caminho da conquista. Você pode escolher ficar parado ou acompanhar a transformação que está acontecendo ao seu redor.
+      </p>
+    </div>
 
-        <!-- Card 4 - Soft Skills -->
-        <section class="card">
-            <h2>Soft Skills</h2>
-            <ul style="padding-left: 20px;">
-                <li><strong>Comunicação:</strong> Habilidade para comunicar ideias de forma clara, seja com equipes internas ou com clientes, sempre mantendo um ambiente colaborativo.</li>
-                <li><strong>Proatividade:</strong> Capacidade de antecipar problemas e implementar soluções eficazes.</li>
-                <li><strong>Trabalho em Equipe:</strong> Colaborativo e sempre disposto a ajudar colegas e compartilhar conhecimentos.</li>
-                <li><strong>Orientação para Resultados:</strong> Foco em alcançar objetivos de forma eficiente e com qualidade.</li>
-                <li><strong>Resiliência:</strong> Capacidade de se adaptar rapidamente a novas situações e superar obstáculos com determinação.</li>
-            </ul>
-        </section>
-
-        <!-- Card 5 - Atividades Pessoais -->
-        <section class="card">
-            <h2>Atividades Pessoais</h2>
-            <p>Além da minha carreira profissional, sou apaixonado por literatura, futebol, xadrez, conservação ambiental, cuidar de animais (PET) e cozinhar.</p>
-            <p>Essas atividades me ajudam a manter o equilíbrio e a criatividade, além de fortalecer meu espírito de equipe e colaboração.</p>
-        </section>
-
-        <!-- Card 6 - Recomendações LinkedIn -->
-        <section class="card">
-            <h2>Recomendações LinkedIn</h2>
-            <div style="padding-left: 20px;">
-                <li>Douglas Moreira (Analista de Suporte | Field Service | AWS): "Ótimo profissional, dedicado e sempre disposto a ajudar."</li>
-                <li>Rita de Cassia Aires (Executivo Comercial Sênior): "Bom profissional, responsável e sempre dedicado a aprender coisas novas."</li>
-                <li>Kassio Araujo (Analista de Sistema): "Bom relacionamento interpessoal e dedicado, sempre ajudando a equipe."</li>
-                <li>Fernando dos Santos Pazzim (Profissional de Redes e Segurança): "Ótimo profissional. Pró-ativo, analítico e atencioso com os processos que atende."</li>
-                <li>Luiz Alberto Carnaval (Sysadmin | Cloud OCI, AWS, Azure, GCP): "Fabiano é um excelente profissional, proativo e eficiente."</li>
-                <li>Rafael Secco Olivastro (Coordenador TI, Logística): "Profissional muito dedicado e esforçado, trabalha muito bem em equipe."</li>
-                <li>Tiago Garcia Xavier (Analista de Suporte Técnico): "Funcionário experiente, com foco no trabalho, recomendo."</li>
-                <li>Patricia Conceição Barbosa (QA Analyst): "Fabiano é preciso, esforçado, educado e pontual, sempre disponível para ajudar."</li>
-                <li>Hernani Donato (Analista de Qualidade e Processos Sênior): "Compete em tarefas de suporte e infraestrutura com eficiência e uma abordagem crítica."</li>
-                <li>Ronye Katachinski (Coordenador de Infraestrutura): "Sempre ativo e disposto a ajudar, excelente parceria."</li>
-                <li>Marco Aurelio Garcia (IT Manager | Azure | ITIL): "Fabiano é pontual, disposto a encarar desafios e sempre motivado."</li>
-            </div>
-        </section>
-
-        <!-- Seção final -->
-        <section>
-            <h2 class="sobre__subtitulo">Habilidades além do que posso oferecer</h2>
-            <h3>Estou pronto para enfrentar novos desafios e contribuir para o crescimento e sucesso da sua equipe.</h3>
-        </section>
-        
-    </main>
-
-    <br>
+    <!-- HR antes dos cards -->
     <hr>
-    <footer>
-        <h4><small>&COPY; CopyWrite Desenvolvido por Fabiano Navarro.</small></h4>
-        <div class="footer__imagens-container">
-            <a href="https://github.com/Fabianonavarro" target="_blank"><img src="./assets/github-icon.png" alt="GitHub" class="footer__imagem"></a> 
-            <a href="https://www.linkedin.com/in/fabiano-de-navarro" target="_blank"><img src="./assets/linkedin-icon.png" alt="LinkedIn" class="footer__imagem"></a> 
-            <a href="mailto:nav.info.suporte@gmail.com"><img src="./assets/email-icon.png" alt="Email" class="footer__imagem"></a>
-            <a href="https://www.dio.me/users/nav_info_suporte" target="_blank">+info</a>
-        </div>
-    </footer>
+
+  </section>
+
+  <!-- Formação -->
+  <section class="mb-5">
+    <h2 class="text-center mb-4" style="color: var(--primary-color);">Formação</h2>
+    <div class="card col-12 mb-3 p-3">
+      <p>Minha base acadêmica me proporcionou conhecimentos sólidos em TI e desenvolvimento de sistemas, permitindo aplicar conceitos de gestão de tecnologia e programação na prática.</p>
+      <h5>Centro Universitário Senac</h5>
+      <p>Gestão da Tecnologia da Informação (trancado)</p>
+
+      <hr>
+
+      <h5>Gran Faculdade</h5>
+      <p>Tecnólogo em Análise e Desenvolvimento de Sistemas – Início: 2025 – Em andamento</p>
+      <p>Estou focado em me especializar continuamente, acompanhando as tendências do mercado de TI, com ênfase em desenvolvimento de software, análise de dados e soluções modernas em nuvem.</p>
+    </div>
+  </section>
+
+  <!-- Cursos e Certificações -->
+  <section class="mb-5">
+    <h2 class="text-center mb-4" style="color: var(--primary-color);">Cursos e Certificações</h2>
+    <div class="card col-12 mb-3 p-3">
+      <p>Ao longo da minha carreira, busquei complementar minha formação com cursos práticos e certificações relevantes em TI, Data Analytics, Cloud e desenvolvimento.</p>
+      <hr>
+      <ul>
+        <li>SENAC: Instalação e Manutenção de PCs – São Paulo, Dezembro/2014 – 240 horas</li>
+        <li>Ka Solution Tecnologia em Software: Microsoft Security Compliance (SC900) – São Paulo, 2021</li>
+        <li>SENAI: Tecnologia da Informação e Comunicação – Janeiro/2023 – 14 horas</li>
+        <li>DIO: Python Data Analytics, Python AI Backend Developer – 2023-2024</li>
+        <li>Fundação Bradesco e Suzano: Data Analytics com Power BI – 2023-2025</li>
+        <li>Escola das Nuvens: AWS re/Start Graduate – 2024</li>
+        <li>NTT DATA: Engenharia de Dados com Python – 2024</li>
+        <li>Bootcamp Santander: Ciências de Dados com Python – 2025</li>
+        <li>CC50: Introdução à Ciência da Computação (Harvard) – Fundação Estudar – 2024</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Habilidades Técnicas -->
+  <section class="mb-5">
+    <h2 class="text-center mb-4" style="color: var(--primary-color);">Habilidades Técnicas</h2>
+    <div class="card col-12 p-3">
+      <ul>
+        <li><strong>Sistemas Operacionais:</strong> Windows, Linux, macOS, Android</li>
+        <li><strong>Linguagens de Programação:</strong> Python, JavaScript, Python Data Analytics</li>
+        <li><strong>Plataformas de Nuvem:</strong> AWS, Google Cloud, Citrix, Virtual Machines</li>
+        <li><strong>Ferramentas de Análise de Dados:</strong> Power BI, MySQL, PostgreSQL</li>
+        <li><strong>Desenvolvimento Web:</strong> HTML, React, JavaScript</li>
+        <li><strong>Outras ferramentas:</strong> Office 365, Microsoft Teams, Active Directory, ServiceNow</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experiência Profissional -->
+  <section class="mb-5">
+    <h2 class="text-center mb-4" style="color: var(--primary-color);">Experiência Profissional</h2>
+    <div class="card col-12 p-3">
+      <p>Trabalhei em empresas renomadas como TIVIT, Algar Tech, Iamit Soluções e Azul Linhas Aéreas, desempenhando funções como:</p>
+      <ul>
+        <li>Suporte Técnico e Infraestrutura: atendimento remoto/presencial, resolução de incidentes complexos.</li>
+        <li>Administração de Sistemas e Redes: Windows, Linux, VPN, Citrix, Active Directory, segurança corporativa.</li>
+        <li>Análise de Dados e Business Intelligence: Power BI, Python, geração de insights estratégicos.</li>
+        <li>Projetos de Melhoria e Implementação: SMARTKARGO, projeto APU Zero e outros projetos internos de otimização.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Soft Skills -->
+  <section class="mb-5">
+    <h2 class="text-center mb-4" style="color: var(--primary-color);">Soft Skills</h2>
+    <div class="card col-12 p-3">
+      <ul>
+        <li>Comunicação clara e eficaz</li>
+        <li>Proatividade e resolução de problemas</li>
+        <li>Trabalho em equipe e colaboração</li>
+        <li>Orientação para resultados</li>
+        <li>Resiliência e adaptabilidade</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Atividades Pessoais -->
+  <section class="mb-5">
+    <h2 class="text-center mb-4" style="color: var(--primary-color);">Atividades Pessoais</h2>
+    <div class="card col-12 p-3">
+      <p>Futebol, xadrez, literatura, conservação ambiental, cuidado com pets e culinária. Essas atividades fortalecem criatividade, equilíbrio e espírito de equipe.</p>
+    </div>
+  </section>
+
+  <!-- Recomendações LinkedIn -->
+  <section class="mb-5">
+    <h2 class="text-center mb-4" style="color: var(--primary-color);">Recomendações LinkedIn</h2>
+    <div class="card col-12 p-3">
+      <ul>
+        <li>Douglas Moreira: "Ótimo profissional, dedicado e sempre disposto a ajudar."</li>
+        <li>Rita de Cassia Aires: "Bom profissional, responsável e sempre dedicado a aprender."</li>
+        <li>Kassio Araujo: "Bom relacionamento interpessoal e dedicado."</li>
+        <li>Fernando Pazzim: "Ótimo profissional, pró-ativo e analítico."</li>
+        <li>Luiz Alberto Carnaval: "Fabiano é excelente, proativo e eficiente."</li>
+        <li>Rafael Secco Olivastro: "Profissional muito dedicado e trabalha bem em equipe."</li>
+        <li>Tiago Garcia Xavier: "Funcionário experiente e focado."</li>
+        <li>Patricia Conceição Barbosa: "Precisão, esforço e disponibilidade."</li>
+        <li>Hernani Donato: "Competente em suporte e infraestrutura."</li>
+        <li>Ronye Katachinski: "Sempre ativo e colaborativo."</li>
+        <li>Marco Aurelio Garcia: "Pontual, motivado e pronto para desafios."</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="rodape">
+  <div class="rodape__menu">
+    <span class="rodape__copy">
+      © CopyWrite Desenvolvido por Fabiano Navarro.
+    </span>
+
+    <nav class="rodape__links">
+      <a href="https://github.com/Fabianonavarro" target="_blank">
+        <img src="./assets/github-icon.png" alt="GitHub"> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/fabiano-de-navarro" target="_blank">
+        <img src="./assets/linkedin-icon.png" alt="LinkedIn"> LinkedIn
+      </a>
+      <a href="mailto:nav.info.suporte@gmail.com">
+        <img src="./assets/email-icon.png" alt="Email"> Email
+      </a>
+      <a href="https://www.dio.me/users/nav_info_suporte" target="_blank">+Info</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
