@@ -1,25 +1,22 @@
-// Espera o DOM carregar
-document.addEventListener("DOMContentLoaded", function() {
-  
-  // Inicializa EmailJS (v4)
-  emailjs.init("UF1QSKpNpI0WKgweL"); // Sua chave pública
+// Inicializa EmailJS com sua chave pública
+emailjs.init("UF1QSKpNpI0WKgweL"); // Substitua pela sua chave pública ativa
 
-  const form = document.getElementById("subscriptionForm");
+// Captura envio do formulário
+const form = document.getElementById("contactForm");
 
-  form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita envio padrão
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
 
-    // Envia o formulário
-    emailjs.sendForm("nav.info.suporte", "formulario", form)
-      .then(function(response) {
-        alert("Mensagem enviada com sucesso!");
-        form.reset(); // Limpa os campos
-        console.log("EmailJS response:", response);
-      })
-      .catch(function(error) {
-        alert("Erro ao enviar a mensagem. Veja o console para detalhes.");
-        console.error("Erro EmailJS:", error);
-      });
-  });
+  // Substitua com seus Service ID e Template ID corretos
+  const serviceID = "seu_service_id";     // ex: "service_xxx"
+  const templateID = "seu_template_id";   // ex: "template_xxx"
 
+  emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      alert("Mensagem enviada com sucesso!");
+      form.reset();
+    }, (err) => {
+      console.error("Erro detalhado EmailJS:", err);
+      alert("Erro ao enviar a mensagem. Veja o console para detalhes.");
+    });
 });
